@@ -1,7 +1,8 @@
 import pygame
 import pygame.sprite
 
-from yaml import Color
+from pygame import Color
+from pygame.sprite import Sprite
 
 class SnakeSegment(Sprite):
 

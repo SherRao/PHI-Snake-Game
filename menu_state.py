@@ -3,7 +3,7 @@ import pygame.freetype
 import os
 
 from pygame import Rect
-from State import State
+from state import State
 
 class MenuState(State):
 

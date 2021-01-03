@@ -6,9 +6,11 @@ class State:
     A State contains code to update its own logic, render its own assets, and receives events from the main game loop. A State should bundle things, 
     such as buttons, UI elements, AI, etc...
 
+
     Attributes
     ----------
     None
+
 
     Methods
     ----------

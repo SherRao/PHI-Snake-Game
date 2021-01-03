@@ -4,9 +4,9 @@ import sys
 import logging
 import yaml
 
-from GameState import GameState
-from MenuState import MenuState
-from State import State
+from game_state import GameState
+from menu_state import MenuState
+from state import State
 
 class Main:
     """
@@ -61,7 +61,6 @@ class Main:
         """
         Called before anything game related is happening. Sets up the execution of the game loop.
 
-
         Parameters
         ----------
         None
@@ -100,10 +99,9 @@ class Main:
         return
 
 
-    def loadFromConfig(self):
+    def load_from_config(self):
         """
         Called during the pregame phase - loads all values needed from the config file.
-
 
         Parameters
         ----------
@@ -133,7 +131,6 @@ class Main:
     def tick(self):
         """
         Called once per frame to update evrything related to updating logic involving the game.
-
 
         Parameters
         ----------
@@ -181,7 +178,6 @@ class Main:
         """
         Called once per frame to update everything related to updating the screen.
 
-
         Parameters
         ----------
         None
@@ -201,6 +197,7 @@ class Main:
         self.currentState.render()
         if(self.debug):
             print('debug')
+            #TODO: Draw debug info
         
         pygame.display.flip()
         return
