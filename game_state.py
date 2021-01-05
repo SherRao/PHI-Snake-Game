@@ -27,7 +27,6 @@ class GameState(State):
         self.snakeSprites = pygame.sprite.Group()
         self.speed = 5
 
-
         print(self.food)
         print(self.snakeHead.rect)
 

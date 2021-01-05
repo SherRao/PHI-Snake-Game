@@ -75,10 +75,9 @@ class Main:
         ----------
         Nausher Rao
         """ 
-
         logging.basicConfig(level=logging.DEBUG)
         logging.info("Starting program")
-        self.loadFromConfig()
+        self.load_from_config()
 
         pygame.init()
         pygame.display.set_caption("Test Game")
